@@ -18,6 +18,17 @@ public class Product {
             throw new RuntimeException("Заполните карточку товара");
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public void setKg(double kg) {
+        this.kg = kg;
+    }
 
     public String getName() {
         return name;
