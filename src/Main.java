@@ -14,7 +14,11 @@ public class Main {
         list.add(new Product("Кинза", 49, 0.30));
         list.add(new Product("Масло подсолнечное", 99, 0.01));
 
-        System.out.println(list);
+
+        Iterator itr = list.iterator();
+        while (itr.hasNext()) {
+            System.out.println(itr.next());
+        }
 
         hasDuplicates(list);
 
@@ -34,7 +38,10 @@ public class Main {
                 177.7));
 
 
-        System.out.println(recipeList);
+        Iterator itr1 = recipeList.iterator();
+        while (itr1.hasNext()) {
+            System.out.println(itr1.next());
+        }
         hasDuplicatesRecipe(recipeList);
 
 
